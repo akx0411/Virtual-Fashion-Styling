@@ -60,12 +60,12 @@ export default function AdminDashboardScreen() {
   );
 
   const menuItems = [
-    { label: 'Total Sellers',      icon: 'people-outline',         screen: 'TotalSellers'    },
-    { label: 'Verify Posts',       icon: 'checkmark-done-outline', screen: 'VerifyPosts'     },
-    { label: 'Terms & Conditions', icon: 'document-text-outline',  screen: 'TermsConditions'},
-    { label: 'Manage Accounts',    icon: 'settings-outline',       screen: 'ManageSellers'   },
-    { label: 'Analytics',          icon: 'analytics-outline',      screen: 'Analytics'       },
-    { label: 'Announcements',      icon: 'notifications-outline',  screen: 'Announcements'   },
+    { label: 'Total Sellers',      icon: 'people-outline',         screen: 'AdminTotalSellers'    },
+    { label: 'Verify Posts',       icon: 'checkmark-done-outline', screen: 'AdminVerifyPost'     },
+    { label: 'Terms & Conditions', icon: 'document-text-outline',  screen: 'AdminTermConditions'},
+    { label: 'Manage Accounts',    icon: 'settings-outline',       screen: 'AdminManageAccounts'   },
+    { label: 'Analytics',          icon: 'analytics-outline',      screen: 'AdminAnalytics'       },
+    { label: 'Announcements',      icon: 'notifications-outline',  screen: 'AdminAnnouncements'   },
   ];
 
   return (

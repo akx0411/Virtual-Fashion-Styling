@@ -53,6 +53,13 @@ import ChatListScreen from './src/screen/ChatListScreen';
 // Admin flow
 import AdminLoginScreen from './src/screen/AdminLoginScreen';
 import AdminDashboardScreen from './src/screen/AdminDashboardScreen';
+import AdminVerifyPost from './src/screen/AdminVerifyPost';
+import AdminTermConditions from './src/screen/AdminTermConditions';
+import AdminAnnouncements from './src/screen/AdminAnnouncements';
+import AdminManageAccounts from './src/screen/AdminManageAccounts';
+import AdminAnalytics from './src/screen/AdminAnalytics';
+import AdminTotalSellers from './src/screen/AdminTotalSellers';
+
 
 const Stack = createNativeStackNavigator();
 
@@ -203,10 +210,18 @@ export default function App() {
         )}
 
         {/* Authenticated Admin */}
-        {splashDone && user && profileComplete && role === 'admin' && (
-          <Stack.Screen name="AdminDashboard" component={AdminDashboardScreen} />
+       {splashDone && user && profileComplete && role === 'admin' && (
+  <>
+    <Stack.Screen name="AdminDashboard" component={AdminDashboardScreen} />
+    <Stack.Screen name="AdminVerifyPost" component={AdminVerifyPost} />
+     <Stack.Screen name="AdminTermConditions" component={AdminTermConditions} />
+      <Stack.Screen name="AdminAnnouncements" component={AdminAnnouncements} />
+       <Stack.Screen name="AdminManageAccounts" component={AdminManageAccounts} />
+         <Stack.Screen name="AdminAnalytics" component={AdminAnalytics} />
+          <Stack.Screen name="AdminTotalSellers" component={AdminTotalSellers} />
+  </>
+)}
 
-        )}
 
         {/* Fallback */}
         <Stack.Screen name="Fallback" component={FallbackScreen} />
